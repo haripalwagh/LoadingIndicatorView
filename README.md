@@ -22,7 +22,7 @@ pod 'LoadingIndicatorView'
 
 ## Author
 
-haripalwagh@gmail.com, haripalw@coreflexsolutions.com
+haripalwagh@gmail.com
 
 ## License
 
