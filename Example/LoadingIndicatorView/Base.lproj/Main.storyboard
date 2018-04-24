@@ -1,30 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ubb-HY-gC1">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <scene sceneID="Blw-OC-2io">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="LoadingIndicatorView_Example" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                <viewController id="Ubb-HY-gC1" customClass="ViewController" customModule="LoadingIndicatorView_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jE4-0k-rqV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mp2-EO-JvT">
+                                <rect key="frame" x="28" y="617" width="148.5" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="xFD-cF-daY"/>
+                                </constraints>
+                                <state key="normal" title="Show HUD">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnShowHUDTapped:" destination="Ubb-HY-gC1" eventType="touchUpInside" id="Qyt-Xh-ev4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ipa-id-Be2">
+                                <rect key="frame" x="198.5" y="617" width="148.5" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="V8n-Ax-slg"/>
+                                </constraints>
+                                <state key="normal" title="Hide HUD">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnHideHUDTapped:" destination="Ubb-HY-gC1" eventType="touchUpInside" id="0eX-DL-42d"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ipa-id-Be2" firstAttribute="leading" secondItem="mp2-EO-JvT" secondAttribute="trailing" constant="22" id="92p-Nl-awq"/>
+                            <constraint firstItem="mp2-EO-JvT" firstAttribute="width" secondItem="ipa-id-Be2" secondAttribute="width" id="Alb-uh-Bj2"/>
+                            <constraint firstItem="QzV-Wg-Dgk" firstAttribute="bottom" secondItem="ipa-id-Be2" secondAttribute="bottom" constant="20" id="FVh-VH-fXw"/>
+                            <constraint firstItem="mp2-EO-JvT" firstAttribute="leading" secondItem="QzV-Wg-Dgk" secondAttribute="leading" constant="28" id="JIl-BU-u3n"/>
+                            <constraint firstItem="QzV-Wg-Dgk" firstAttribute="bottom" secondItem="mp2-EO-JvT" secondAttribute="bottom" constant="20" id="Nh2-aG-3BT"/>
+                            <constraint firstItem="QzV-Wg-Dgk" firstAttribute="trailing" secondItem="ipa-id-Be2" secondAttribute="trailing" constant="28" id="qQ8-qO-ptB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QzV-Wg-Dgk"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vxs-r1-rft" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="116" y="117.39130434782609"/>
         </scene>
     </scenes>
 </document>
