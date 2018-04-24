@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LoadingIndicatorView_Example' do
+  pod 'LoadingIndicatorView', :path => '../'
+
+  target 'LoadingIndicatorView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
