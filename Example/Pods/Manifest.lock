@@ -1,0 +1,16 @@
+PODS:
+  - LoadingIndicatorView (0.1.0)
+
+DEPENDENCIES:
+  - LoadingIndicatorView (from `../`)
+
+EXTERNAL SOURCES:
+  LoadingIndicatorView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  LoadingIndicatorView: 8e2a3c8d6bd0423237ef5a3e446f0041493a83bd
+
+PODFILE CHECKSUM: 512eb29a775d03600e025ad2d62547e7ec57de31
+
+COCOAPODS: 1.4.0

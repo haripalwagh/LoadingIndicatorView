@@ -1,0 +1,6 @@
+framework module LoadingIndicatorView {
+  umbrella header "LoadingIndicatorView-umbrella.h"
+
+  export *
+  module * { export * }
+}
