@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LoadingIndicatorView'
-  s.version          = '1.0'
+  s.version          = '1.1'
   s.summary          = 'It will show loading activity and disable unwanted touches to the screen.'
 
 # This description is used to generate tags and improve search results.
@@ -24,9 +24,9 @@ It will show loading activity and disable unwanted touches to the screen. This i
   s.homepage         = 'https://github.com/haripalwagh/LoadingIndicatorView'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'haripalwagh@gmail.com' => 'haripalwagh@gmail.com' }
+  s.author           = { 'Haripal Wagh' => 'haripalwagh@gmail.com' }
   s.source           = { :git => 'https://github.com/haripalwagh/LoadingIndicatorView.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://twitter.com/haripalwagh'
 
   s.ios.deployment_target = '10.0'
   s.swift_version = '4.1'
