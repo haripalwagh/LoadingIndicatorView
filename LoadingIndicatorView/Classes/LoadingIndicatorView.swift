@@ -64,7 +64,6 @@ open class LoadingIndicatorView: UIView {
     
     open func hideHUD() {
         activityCounter -= 1
-        setIndicatorStyle(indicatorStyle: .whiteLarge)
         if activityCounter < 0 {
             activityCounter = 0
         }
